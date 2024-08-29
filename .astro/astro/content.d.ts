@@ -150,7 +150,30 @@ declare module 'astro:content' {
 	>;
 
 	type ContentEntryMap = {
-		"team": {
+		"house": {
+"chennai.md": {
+	id: "chennai.md";
+  slug: "chennai";
+  body: string;
+  collection: "house";
+  data: InferEntrySchema<"house">
+} & { render(): Render[".md"] };
+"jaipur.md": {
+	id: "jaipur.md";
+  slug: "jaipur";
+  body: string;
+  collection: "house";
+  data: InferEntrySchema<"house">
+} & { render(): Render[".md"] };
+"vadodara.md": {
+	id: "vadodara.md";
+  slug: "vadodara";
+  body: string;
+  collection: "house";
+  data: InferEntrySchema<"house">
+} & { render(): Render[".md"] };
+};
+"team": {
 "janette-lynch.md": {
 	id: "janette-lynch.md";
   slug: "janette-lynch";

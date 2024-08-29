@@ -14,8 +14,22 @@ const teamCollection = defineCollection({
   }),
 });
 
+
+const houseCollection = defineCollection({
+  schema:z.object({
+    draft: z.boolean(),
+    city: z.string(),
+    avatar: z.object({
+      src: z.string(),
+      owner: z.string(),
+    }),
+  })
+})
+
+
 // 3. Export a single `collections` object to register your collection(s)
 //    This key should match your collection directory name in "src/content"
 export const collections = {
   'team': teamCollection,
+  'house':houseCollection
 };
