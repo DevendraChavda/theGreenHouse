@@ -1,0 +1,24 @@
+---
+import { getCollection } from 'astro:content';
+import { Picture } from 'astro:assets';
+import Layout from '@layouts/Layout.astro';
+import Container from '@components/container.astro';
+import ApartmentDetails from '@components/apartmentDetails.astro';
+import { Image } from 'astro:assets';
+import d from '../img/home.jpg';
+
+// Filter team entries with 'draft: false' & date before current date
+const publishedTeamMembers = await getCollection('team', ({ data }) => {
+  return !data.draft && data.publishDate < new Date();
+});
+---
+
+<Layout title="About">
+  <Container>
+    <div class="flex flex-col gap-1 mx-auto max-w-full mt-16">
+      <Image src={d} alt="not found" class={'md:w-full md:h-[500px] rounded-lg'} />
+    </div>
+    
+    <ApartmentDetails />
+  </Container>
+</Layout>
