@@ -4,13 +4,17 @@ import { Image } from 'astro:assets';
 import home from '.././img/home.jpg';
 ---
 <div class="md:flex gap-6 mt-5">
-  <div class="w-4/6" >
+  <div class="lg:w-4/6" >
     <div class="flex justify-between items-center w-full">
-      <div>
-        <h1 class="text-xl">Cosy Apartment for rent</h1>
-      </div>
-      <div>
-        <div class="flex items-center gap-2 font-bold text-blue-gray-500">
+      <div class="flex-auto lg:grid lg:grid-cols-2">
+        <div>
+          <h1 class="text-xl">Cosy Apartment for rent</h1>
+          <div class="flex justify-betwen">
+            <a> <img src="" /></a>
+            <span class="text-lg font-medium">New York, USA</span>
+          </div>
+        </div>
+        <div class="flex items-center gap-2 font-bold text-blue-gray-500 lg:ml-44">
           4.7
           <div class="inline-flex items-center">
             <span>
@@ -79,10 +83,6 @@ import home from '.././img/home.jpg';
           </div>
         </div>
       </div>
-    </div>
-    <div class="flex justify-betwen">
-      <a> <img src="" /></a>
-      <span class="text-lg font-medium">New York, USA</span>
     </div>
     <p>
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem sit consequuntur odio eaque asperiores, ipsam
