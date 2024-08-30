@@ -1,0 +1,40 @@
+---
+import Picture from "astro/components/Picture.astro";
+
+const houseDetails=[{
+    src:'https://img.freepik.com/free-vector/social-media-post-template-real-estate-apartment-promotion_8830-534.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1724112000&semt=ais_hybrid',
+    city:''
+},
+{
+src:'https://img.freepik.com/free-vector/social-media-post-template-real-estate-apartment-promotion_8830-534.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1724112000&semt=ais_hybrid',
+    city:'',
+},
+{
+src:'https://img.freepik.com/free-vector/social-media-post-template-real-estate-apartment-promotion_8830-534.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1724112000&semt=ais_hybrid',
+    city:''
+},
+]
+
+---
+
+<div class="relative p-5">
+    <!-- Top-right small "View More" button -->
+    <div class="float-right top-0 right-0 shadow-md cursor-pointer lg:mr-6">
+      <a href="/more-articles" class="font-semibold text-sm">View More</a>
+    </div>
+  
+    <div class="flex flex-wrap gap-5 mt-10">
+        {houseDetails.map(data => (
+          <div class="w-full sm:w-[calc(50%-1.25rem)] lg:w-[calc(33.33%-1.25rem)] p-5 border border-gray-300 rounded-md bg-white shadow-sm">
+           <Picture
+                src={data.src}
+                alt={"house"}
+                sizes="(max-width: 800px) 100vw, 400px"
+                width={400}
+                height={400}
+                class="w-full rounded-md rounded transition group-hover:-translate-y-1 group-hover:shadow-xl bg-white object-cover object-center aspect-square"
+              />
+          </div>
+        ))}
+      </div>
+  </div>
