@@ -3,13 +3,57 @@
 @tailwind utilities;
 
 
+/* Define custom properties (variables) */
+@layer base {
+    :root {
+        --color-primary: #4f46e5;
+        /* Indigo 600 */
+        --color-primary-hover: #4338ca;
+        /* Indigo 500 */
+        --color-background: #f3f4f6;
+        /* White background */
+        --color-text-primary: #1f2937;
+        /* Gray 900 */
+        --color-text-secondary: #4b5563;
+        /* Gray 600 */
+        --color-border-active: rgba(255, 255, 255, 0.2);
+        /* White/20 */
+        --color-border-inactive: rgba(107, 114, 128, 0.1);
+        /* Gray 600/10 */
+        --bg-gradient-start: rgba(79, 70, 229, 0.2);
+        /* Indigo 100/20 */
+        --bg-gradient-end: rgba(79, 70, 229, 0.2);
+        /* Indigo 100/20 */
+        --shadow-indigo: rgba(79, 70, 229, 0.1);
+        /* Shadow-indigo-600/10 */
+        --ring-indigo: rgba(249, 250, 251, 0.5);
+        /* Ring-indigo-50 */
+        --bg-indigo-100-opacity: rgba(99, 102, 241, 0.2);
+        /* Indigo 100 opacity-20 */
+    }
+}
+
+.container {
+    @apply flex lg:mr-6 justify-between mb-6
+}
+
 .view-more {
     cursor: pointer;
-    @apply float-right relative inline-block
+    @apply bg-black text-white font-bold rounded p-1 px-2 lg:mr-5 border-solid border-2 border-white
 }
 
 .view-more:hover {
-    text-decoration: underline;
-    font-weight: bold;
+    @apply text-black bg-white border-black 
+}
 
+.houseContainer {
+    @apply flex flex-wrap gap-5 mt-10 mt-5
+}
+
+.housePicture {
+    @apply w-full sm:w-[calc(50%-1.25rem)] lg:w-[calc(33.33%-1.25rem)] p-5 border border-gray-300 rounded-md bg-white shadow-sm
+}
+
+.picture {
+    @apply w-full rounded-md rounded transition group-hover:-translate-y-1 group-hover:shadow-xl bg-white object-cover object-center aspect-square
 }
