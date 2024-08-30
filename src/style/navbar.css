@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Define custom properties (variables) */
+@layer base {
+    :root {
+        --color-primary: #4f46e5;
+        /* Indigo 600 */
+        --color-primary-hover: #4338ca;
+        /* Indigo 500 */
+        --color-background: #f3f4f6;
+        /* White background */
+        --color-text-primary: #1f2937;
+        /* Gray 900 */
+        --color-text-secondary: #4b5563;
+        /* Gray 600 */
+        --color-border-active: rgba(255, 255, 255, 0.2);
+        /* White/20 */
+        --color-border-inactive: rgba(107, 114, 128, 0.1);
+        /* Gray 600/10 */
+        --bg-gradient-start: rgba(79, 70, 229, 0.2);
+        /* Indigo 100/20 */
+        --bg-gradient-end: rgba(79, 70, 229, 0.2);
+        /* Indigo 100/20 */
+        --shadow-indigo: rgba(79, 70, 229, 0.1);
+        /* Shadow-indigo-600/10 */
+        --ring-indigo: rgba(249, 250, 251, 0.5);
+        /* Ring-indigo-50 */
+        --bg-indigo-100-opacity: rgba(99, 102, 241, 0.2);
+        /* Indigo 100 opacity-20 */
+        --justify-content:
+
+    }
+}
+
+.header {
+    @apply flex flex-col  lg:flex-row justify-between items-center my-5
+}
+
+.title {
+    @apply flex w-full lg:w-auto items-center justify-between
+}
+
+.menuBar {
+    @apply block lg:hidden
+}
+
+.menuIcon {
+    @apply w-4 h-4 text-gray-800
+}
+
+.menuItems{
+    @apply hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0
+}
+
+.navOption{
+    @apply flex flex-col lg:flex-row lg:gap-3
+}
+.navOptionLink{
+    @apply flex lg:px-3 py-2 items-center text-gray-600 hover:text-gray-900
+}
+
+.userBtn{
+   @apply flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600
+}
+
+.userDropDown{
+    @apply z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600
+}
+
+.userName{
+    @apply block text-sm text-gray-900 dark:text-white
+}
+
+.userMenuOption{
+    @apply block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white
+}
+
+
+

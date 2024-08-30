@@ -6,6 +6,8 @@ import ApartmentDetails from '@components/apartmentDetails.astro';
 import { Image } from 'astro:assets';
 import home from '../img/home.jpg';
 import MoreHouse from '@components/moreHouse.astro';
+import Carosouel from '@components/carosouel.astro';
+import '.././style/rent.css'
 
 // Filter team entries with 'draft: false' & date before current date
 const publishedTeamMembers = await getCollection('team', ({ data }) => {
@@ -15,8 +17,8 @@ const publishedTeamMembers = await getCollection('team', ({ data }) => {
 
 <Layout title="About">
   <Container>
-    <div class="flex flex-col gap-1 mx-auto max-w-full mt-16">
-      <Image src={home} alt="not found" class={'md:w-full md:h-[500px] rounded-lg'} />
+    <div class="homeImgContainer">
+      <Image src={home} alt="not found" class={'homeImg'} />
     </div>
     <ApartmentDetails />
     <MoreHouse/>

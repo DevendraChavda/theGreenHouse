@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.view-more {
+    cursor: pointer;
+    @apply float-right relative inline-block
+}
+
+.view-more:hover {
+    text-decoration: underline;
+    font-weight: bold;
+
+}

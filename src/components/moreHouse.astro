@@ -1,5 +1,6 @@
 ---
 import Picture from "astro/components/Picture.astro";
+import '../style/moreHouse.css'
 
 const houseDetails=[{
     src:'https://img.freepik.com/free-vector/social-media-post-template-real-estate-apartment-promotion_8830-534.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1724112000&semt=ais_hybrid',
@@ -17,10 +18,14 @@ src:'https://img.freepik.com/free-vector/social-media-post-template-real-estate-
 
 ---
 
-<div class="relative p-5">
+<div class="relative p-5 lg:mt-10">
     <!-- Top-right small "View More" button -->
-    <div class="float-right top-0 right-0 shadow-md cursor-pointer lg:mr-6">
-      <a href="/more-articles" class="font-semibold text-sm">View More</a>
+   
+    <div class="lg:mr-6">
+      <span class="float-left">
+        More House Details
+       </span>
+      <a href="/more-articles" class="view-more">View More</a>
     </div>
   
     <div class="flex flex-wrap gap-5 mt-10">

@@ -2,6 +2,7 @@
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { Image } from 'astro:assets';
 import home from '.././img/home.jpg';
+import Carosouel from './carosouel.astro';
 ---
 <div>
   <div class="md:flex gap-6 mt-5">
@@ -91,12 +92,7 @@ import home from '.././img/home.jpg';
         aperiam quas at, officiis similique ab non necessitatibus, ducimus aspernatur possimus beatae impedit. Dolorum
         ratione possimus, sapiente aut ipsum, nam deleniti ipsa impedit mollitia perspiciatis animi rerum odit quam.
       </p>
-      <div class="grid grid-cols-4 gap-4 mt-4">
-        <Image src={home} alt="not found"/>
-        <Image src={home} alt="not found"/>
-        <Image src={home} alt="not found"/>
-        <Image src={home} alt="not found"/>
-      </div>
+       <Carosouel/>
     </div>
     <div>
       <div class="md:w-full p-2">
