@@ -18,10 +18,13 @@ const publishedTeamMembers = await getCollection('team', ({ data }) => {
 <Layout title="About">
   <Container>
     <div class="homeImgContainer">
-      <Image src={home} alt="not found" class={'homeImg'} />
+      <Image src={home} alt="not found" class='homeImg md:h-[500px]' />
     </div>
-    
+  </Container>
+  <Container>
     <ApartmentDetails />
+  </Container>
+  <Container>
     <MoreHouse/>
   </Container>
 </Layout>
