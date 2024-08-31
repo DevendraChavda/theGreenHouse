@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>Price Icons Light</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Rentals" transform="translate(-251.000000, -343.000000)">
+            <g id="Price-Icons-Light" transform="translate(251.000000, 343.000000)">
+                <rect id="Rectangle-Copy-5" fill="#F6F5F4" transform="translate(19.000000, 19.000000) scale(-1, 1) translate(-19.000000, -19.000000) " x="0" y="0" width="38" height="38" rx="4"></rect>
+                <g id="Group-7" transform="translate(16.000000, 11.200000)">
+                    <ellipse id="Oval-Copy" fill="#3D3B3B" transform="translate(3.500000, 2.500000) scale(-1, 1) translate(-3.500000, -2.500000) " cx="3.5" cy="2.5" rx="3.5" ry="2.5"></ellipse>
+                    <ellipse id="Oval-Copy-2" fill="#F6F5F4" transform="translate(3.500000, 2.500000) scale(-1, 1) translate(-3.500000, -2.500000) " cx="3.5" cy="2.5" rx="2.8" ry="1.8"></ellipse>
+                </g>
+                <path d="M12.9719555,8.0963964 L32.8648649,13.6765766 C27.9628221,17.7153159 25.4285147,19.8033041 25.2619424,19.9405412 C25.0953702,20.0777782 24.928798,20.2150152 24.7622258,20.3522523 L4.7509062,13.6765766 L12.9719555,8.0963964 Z M13.2087758,9.36306306 L7.423593,13.3171171 L24.6268998,19.0342342 L30.4628299,14.1986486 L13.2087758,9.36306306 Z" id="Combined-Shape" fill="#3D3B3B" transform="translate(18.807886, 14.224324) scale(-1, 1) translate(-18.807886, -14.224324) "></path>
+                <polygon id="Path-18" fill="#3D3B3B" transform="translate(18.757138, 19.924324) scale(-1, 1) translate(-18.757138, -19.924324) " points="4.7509062 16.0900901 24.4915739 22.6801802 32.7633704 15.8333333 32.7633704 17.3567568 24.74531 24.0153153 4.7509062 17.3567568"></polygon>
+                <polygon id="Path-19" fill="#3D3B3B" transform="translate(18.790970, 23.638739) scale(-1, 1) translate(-18.790970, -23.638739) " points="4.81856916 19.7531532 24.5592369 26.3945946 32.8310334 19.5477477 32.8648649 20.9447793 24.812973 27.7297297 4.71707472 20.9447793"></polygon>
+                <polygon id="Path-20" fill="#3D3B3B" transform="translate(18.740223, 27.318919) scale(-1, 1) translate(-18.740223, -27.318919) " points="4.71707472 23.4846847 24.4577424 30.0747748 32.7633704 23.2279279 32.729539 24.7513514 24.7114785 31.4099099 4.71707472 24.7513514"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
