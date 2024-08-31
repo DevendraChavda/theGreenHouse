@@ -1,26 +1,17 @@
 ---
-import Button from "./ui/button.astro";
 ---
 
 <!-- To make this contact form work, create your free access key from https://web3forms.com/
      Then you will get all form submissions in your email inbox. -->
 <div
   id="contactFormButton"
-  class="fixed right-0 z-10 hidden bottom-16 md:right-2 lg:right-14"
+  class="fixed right-0 z-10 hidden float-right bottom-16 md:right-2 lg:right-14"
 >
     <form
       id="form"
-      class="needs-validation hidden min-w-96 contact-form bg-white p-5 rounded-md"
+      class="needs-validation hidden max-w-80 md:max-w-96 contact-form bg-white p-5 rounded-md"
       novalidate
     >
-      <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
-      <!-- Create your free access key from https://web3forms.com/ -->
-      <input
-        type="checkbox"
-        class="hidden"
-        style="display:none"
-        name="botcheck"
-      />
       <div class="mb-5">
         <input
           type="text"
@@ -60,7 +51,7 @@ import Button from "./ui/button.astro";
           Please enter your message.
         </div>
       </div>
-      <Button type="submit" size="lg" block>Send Message</Button>
+      <button class="my-button w-full" type="submit" size="lg" block>Send Message</button>
       <div id="result" class="mt-3 text-center"></div>
     </form>
 

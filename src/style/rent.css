@@ -16,6 +16,6 @@
     @apply bg-black text-white font-bold rounded p-1 px-2 lg:mr-5 border-solid border-2 border-white
 }
 
-.my-button {
+.my-button:hover {
     @apply text-black bg-white border-black 
 }
