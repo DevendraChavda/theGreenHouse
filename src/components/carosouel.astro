@@ -7,8 +7,10 @@ import { Image } from "astro:assets";
 
 <div class="relative w-full max-w-4xl mt-10 mx-auto">
     <div>
-        <h1 class="text-2xl font-bold">Features</h1>
-        <p>Restaurant close by Villa For Sale, Shopping close by Villa For Sale</p>
+        <h1 class="text-3xl font-bold">Features</h1>
+        <p>
+            Restaurant close by Villa For Sale, Shopping close by Villa For Sale
+        </p>
     </div>
     <div class="overflow-hidden">
         <div
@@ -68,6 +70,13 @@ import { Image } from "astro:assets";
             </div>
         </div>
     </div>
+
+    <div id="prevSlide" class="absolute top-2/4 mt-4 left-0 transform -translate-y-1/2 bg-white p-2 rounded-md" onclick="prevSlide()">
+        <h1 class="text-2xl">‹</h1>
+    </div>
+    <div id="nextSlide" class="absolute top-2/4 mt-4 right-0 transform -translate-y-1/2 bg-white p-2 rounded-md" onclick="nextSlide()">
+        <h1 class="text-2xl">›</h1>
+    </div>
 </div>
 
 <script>
@@ -121,4 +130,14 @@ import { Image } from "astro:assets";
 
     // Update the slider on window resize to ensure correct display
     window.addEventListener("resize", updateSlider);
+
+    const prevSlideElement = document.getElementById("prevSlide");
+    if (prevSlideElement) {
+        prevSlideElement.addEventListener("click", prevSlide);
+    }
+
+    const nextSlideElement = document.getElementById("nextSlide");
+    if (nextSlideElement) {
+        nextSlideElement.addEventListener("click", nextSlide);
+    }
 </script>
